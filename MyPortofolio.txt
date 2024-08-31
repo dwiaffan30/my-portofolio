@@ -1,53 +1,17 @@
-Navbar
-const Navbar = () => {
-    return (
-        <>
-        <header className="bg-gray-800 text-white p-4 flex justify-center" >
-          <div className="container mx-auto flex justify-between items-center">
-            <h1 className="text-xl font-bold">Portofolio Saya</h1>
-            <nav>
-              <ul className="flex space-x-4">
-                <li><a href="#about" className="hover:underline">Tentang</a></li>
-                <li><a href="#projects" className="hover:underline">Proyek</a></li>
-                <li><a href="#contact" className="hover:underline">Kontak</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        </>
-    );
+App.jsx
+import About from "./komponen/About";
+import Contact from "./komponen/Contact";
+import Header from "./komponen/Header";
+import Projects from "./komponen/Projects";
+
+export default function App() {
+  return(
+    <>
+    <Header/>
+    <About/>
+    <Projects/>
+    <Contact/>
+    </>
+  )
 }
-export default Navbar;
 
-HomePage
-const HomePage = () => {
-    return (
-        <>
-        <section className="bg-blue-500 text-white h-screen flex items-center justify-center">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold mb-4">Halo, Saya Affan Dwi Saputra </h2>
-            <p className="text-lg mb-8">Saya seorang Pelajar Di SMK LETRIS INDONESIA 2 dengan jurusan Rekayasa Perangkat Lunak</p>
-            <a href="#projects" className="bg-white text-blue-500 py-2 px-4 rounded-full">Lihat Proyek Saya</a>
-          </div>
-        </section>
-        </>
-    );
-}
-export default HomePage;
-
-Footer
-// const Footer = () => {
-//     return (
-//         <>
-//         <footer className="bg-gray-800 text-white py-4">
-//           <div className="container mx-auto text-center">
-//             <p>&copy; Designed - Affan Dwi Saputra. Portofolio Saya. Semua hak cipta dilindungi.</p>
-//           </div>
-//         </footer>
-//         </>
-//     );
-// }
-// export default Footer;
-
-
-    

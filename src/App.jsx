@@ -1,15 +1,20 @@
-import About from "./komponen/About";
-import Contact from "./komponen/Contact";
-import Header from "./komponen/Header";
-import Projects from "./komponen/Projects";
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
+// import Second from './components/second'
+// import Pertama from './pages/pertama'
+import Home from './pages/Home'
+import Kedua from './pages/Kedua'
+// import Pertama from "./pages/pertama";
 
 export default function App() {
   return(
     <>
-    <Header/>
-    <About/>
-    <Projects/>
-    <Contact/>
+    {/* <Home/> */}
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Kedua' element={<Kedua/>} />
+      </Routes>
+    </Router>
     </>
   )
 }
