@@ -1,0 +1,54 @@
+App jsx
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
+// import Second from './components/second'
+// import Pertama from './pages/pertama'
+import Home from './pages/Home'
+import Kedua from './pages/Kedua'
+// import Pertama from "./pages/pertama";
+
+export default function App() {
+  return(
+    <>
+    {/* <Home/> */}
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Kedua' element={<Kedua/>} />
+      </Routes>
+    </Router>
+    </>
+  )
+}
+
+Kedua.jsx
+import Footer from "../components/Footer";
+import HomePages from "../components/HomePages";
+import Navbar from "../components/Navbar";
+
+const Kedua = () => {
+    return(
+        <>
+        {/* Navbar */}
+        <Navbar/>
+        <HomePages/>
+        {/* Footer */}
+        <Footer/>
+        </>
+    )
+}
+export default Kedua;
+
+Home.jsx
+import Footer from "../components/Footer";
+import MainHome from "../components/MainHome";
+import Navbar from "../components/Navbar";
+
+export default function Home() {
+    return (
+        <>
+        <Navbar/>
+        <MainHome/>
+        <Footer/>
+        </>
+      );
+}
