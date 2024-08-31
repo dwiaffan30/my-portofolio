@@ -1,16 +1,22 @@
-import Footer from "./components/Footer";
-import HomePage from "./components/HomePages";
-import Navbar from "./components/Navbar";
+// import Home from "./pages/Home";
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
+// import Second from './components/second'
+// import Pertama from './pages/pertama'
+import Home from './pages/Home'
+import Kedua from './pages/Kedua'
+// import Pertama from "./pages/pertama";
 
-// App.jsx
-function App() {
-  return (
+export default function App() {
+  return(
     <>
-      <Navbar></Navbar>
-      <HomePage></HomePage>
-      <Footer></Footer>
+    {/* <Home/> */}
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/Kedua' element={<Kedua/>} />
+      </Routes>
+    </Router>
     </>
-  );
+  )
 }
 
-export default App;
