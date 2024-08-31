@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="flex font-medium list-none ml-5">
         <ul className="flex gap-8">
           <li><a href="" className="hover:text-gray-500 delay-150" onClick={() => navigate('/')}>Home</a></li>
-          <li><a href="" className="hover:text-gray-500 delay-150">News</a></li>
+          <li><a href="" className="hover:text-gray-500 delay-150">Sekarang</a></li>
           <li><a href="" className="hover:text-gray-500 delay-150">Sport</a></li>
         </ul>
       </div>
